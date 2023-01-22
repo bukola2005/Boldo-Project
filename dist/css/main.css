@@ -136,6 +136,20 @@ button[class^='btn-']:hover {
   align-items: center;
   gap: 2rem; }
 
+.center {
+  text-align: center; }
+
+.main-color {
+  color: #0A2640;
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-right: 2rem; }
+
+.gray-color {
+  color: #777777;
+  font-weight: 400;
+  font-size: 1.6rem; }
+
 * {
   margin: 0;
   padding: 0;
@@ -158,7 +172,6 @@ p, h3 {
 
 a {
   text-decoration: none;
-  color: #ffffff;
   font-family: 'Open Sans',sans-serif; }
 
 ul {
@@ -231,21 +244,38 @@ button {
     #showcase-area .show-flex > div:first-child div > button:not(:last-child) {
       margin-right: 3rem; }
 
-#service > div:first-child {
-  text-align: center; }
-  #service > div:first-child p {
-    font-weight: 400;
-    color: #777777;
-    font-size: 2rem; }
-  #service > div:first-child h2 {
-    font-weight: 400;
-    color: #000000;
-    font-size: 5rem; }
+#service .center p {
+  font-weight: 400;
+  color: #777777;
+  font-size: 2rem; }
+
+#service .center h2 {
+  font-weight: 400;
+  color: #000000;
+  font-size: 5rem; }
 
 #service .feature {
   grid-gap: 6rem; }
   #service .feature > div > img {
     width: 70%; }
+  #service .feature .inner-value {
+    line-height: 2;
+    padding: 1rem 0;
+    width: 80%; }
+    #service .feature .inner-value h3 {
+      font-weight: 400;
+      font-size: 2rem; }
+    #service .feature .inner-value p {
+      font-weight: 400;
+      color: #777777;
+      font-size: 1.8rem; }
+  #service .feature .flex a {
+    font-weight: 700;
+    color: #0A2640;
+    font-size: 1.6rem;
+    border-bottom: solid 2px #0A2640; }
+  #service .feature .flex img {
+    width: 7%; }
 
 #customer .cust {
   grid-gap: 10rem;
@@ -358,23 +388,29 @@ button {
     #faq > div > :last-child .all-party3 div img {
       width: 5%; }
 
-#blog .container div:first-child {
-  text-align: center; }
-  #blog .container div:first-child p {
-    font-weight: 400;
-    color: #777777;
-    font-size: 2rem; }
-  #blog .container div:first-child h2 {
-    font-weight: 400;
-    font-size: 5rem; }
+#blog .container .center p {
+  font-weight: 400;
+  color: #777777;
+  font-size: 2rem; }
 
-#blog .container .blog-flex > div {
-  text-align: center; }
-  #blog .container .blog-flex > div img {
-    width: 85%; }
+#blog .container .center h2 {
+  font-weight: 400;
+  font-size: 5rem; }
 
-#blog .container > div:last-child {
-  text-align: center; }
+#blog .container .grid {
+  gap: 4rem; }
+  #blog .container .grid .img {
+    width: 80%; }
+  #blog .container .grid .inner-blog {
+    width: 90%; }
+    #blog .container .grid .inner-blog p {
+      font-weight: 400;
+      font-size: 2rem; }
+  #blog .container .grid .flex img {
+    width: 7%; }
+  #blog .container .grid .flex p {
+    font-weight: 400;
+    font-size: 1.6rem; }
 
 #enterprise .container > div {
   background-color: #0A2640;
@@ -517,7 +553,7 @@ button {
       font-weight: 400;
       font-size: 4rem; }
 
-#team .container p {
+#team .container .will {
   color: #777777;
   font-weight: 400;
   font-size: 2rem;
@@ -527,12 +563,35 @@ button {
   font-weight: 400;
   font-size: 5rem; }
 
-#team .container .teamflex {
+#team .container .teamflex1 {
   grid-gap: 4rem;
   justify-content: center;
   align-items: center; }
-  #team .container .teamflex img {
+  #team .container .teamflex1 img {
     width: 67%; }
+  #team .container .teamflex1 h3 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin: 2rem 0; }
+  #team .container .teamflex1 p {
+    color: #777777;
+    font-weight: 400;
+    font-size: 2rem;
+    width: 70%; }
+
+#team .container .teamflex2 {
+  gap: 5rem;
+  align-items: center;
+  justify-content: center; }
+  #team .container .teamflex2 img {
+    width: 20%; }
+  #team .container .teamflex2 h3 {
+    font-size: 2rem;
+    font-weight: 400; }
+  #team .container .teamflex2 p {
+    font-size: 1.5rem;
+    color: #777777;
+    font-weight: 400; }
 
 #product {
   background-color: #0A2640; }
@@ -634,16 +693,6 @@ button {
     #blog-area #inner-showcase .inner-flex h1 {
       font-size: 4rem;
       font-weight: 400; }
-
-#new .container {
-  width: 70%; }
-  #new .container > h2 {
-    font-weight: 400;
-    font-size: 4rem; }
-  #new .container .blog-flex div img {
-    width: 88%; }
-  #new .container > div:last-child {
-    text-align: center; }
 
 @media only screen and (max-width: 480px) {
   img#postion {
@@ -795,14 +844,20 @@ button {
       display: block; } }
 
 @media only screen and (max-width: 767px) {
-  .show-flex > div:first-child > div {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
   .show-flex > div:first-child div > button:not(:last-child) {
     margin-right: 0rem; }
+  .show-flex > div:first-child .hit button:not(:last-child) {
+    margin-bottom: 2rem; }
   #team .container p {
     width: 100%; } }
+
+@media only screen and (max-width: 593px) {
+  #ramp .rampflex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #ramp .rampflex h2 {
+      margin-bottom: 2rem; } }
 
 @media only screen and (max-width: 1040px) {
   html {

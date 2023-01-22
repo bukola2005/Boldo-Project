@@ -185,3 +185,17 @@ color: $main-color;
   align-items: center;
   gap: 2rem;
 }
+.center{
+  text-align: center;
+}
+.main-color{
+  color: $main-color;
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-right: 2rem;
+}
+.gray-color{
+  color: $medium-color;
+  font-weight: 400;
+  font-size: 1.6rem;
+}

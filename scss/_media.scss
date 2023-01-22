@@ -258,13 +258,18 @@
     // home
     .show-flex{
       & > div:first-child{
-        & > div{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+        // & > div{
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        // }
         div > button:not(:last-child){
           margin-right: 0rem;
+        }
+        .hit{
+          & button:not(:last-child){
+            margin-bottom: 2rem;
+          }
         }
       }
     } 
@@ -281,7 +286,17 @@
 
   }
 
-@media only screen and (max-width:1280px){
+@media only screen and (max-width:593px){
+#ramp{
+  & .rampflex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+      margin-bottom: 2rem;
+    }
+  }
+}
 
   }
 @media only screen and (max-width:1040px){
