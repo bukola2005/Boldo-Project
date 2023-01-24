@@ -1,6 +1,6 @@
 .container {
   max-width: 114rem;
-  padding: 0  1.5rem;
+  padding: 0  3rem;
   margin: 0 auto;
   overflow: hidden; }
 
@@ -126,7 +126,7 @@ button[class^='btn-']:hover {
   height: 29rem; }
 
 .medium {
-  height: 31rem; }
+  height: 33rem; }
 
 .green {
   color: #65E4A3; }
@@ -257,11 +257,14 @@ button {
 #service .feature {
   grid-gap: 6rem; }
   #service .feature > div > img {
-    width: 70%; }
+    width: 70%;
+    margin: 0 auto;
+    display: block; }
   #service .feature .inner-value {
     line-height: 2;
     padding: 1rem 0;
-    width: 80%; }
+    width: 80%;
+    margin: 0 auto; }
     #service .feature .inner-value h3 {
       font-weight: 400;
       font-size: 2rem; }
@@ -398,6 +401,8 @@ button {
   font-size: 5rem; }
 
 #blog .container .grid {
+  justify-content: center;
+  align-items: center;
   gap: 4rem; }
   #blog .container .grid .img {
     width: 80%; }
@@ -434,7 +439,9 @@ button {
     margin-right: 2rem; }
 
 #footer .container > div:first-child {
-  grid-gap: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2rem;
   align-items: center;
   justify-content: center; }
   #footer .container > div:first-child > div:first-child img {
@@ -748,8 +755,6 @@ button {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .show-flex > div:first-child div > button:not(:last-child) {
-    margin-right: 0; }
   #service .feature > div > img {
     width: 60%; }
   #blog .container .blog-flex > div > img {
@@ -799,6 +804,16 @@ button {
       display: block; }
   #team .container p {
     width: 100%; }
+  #enterprise .container > div input {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 2rem; }
+  #enterprise .container > div button {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 2rem; }
+  #footer .container > div:first-child {
+    grid-template-columns: 100%; }
   #blog-area .nav > img {
     width: 29%; }
   #blog-area .nav ul {
@@ -846,8 +861,6 @@ button {
 @media only screen and (max-width: 767px) {
   .show-flex > div:first-child div > button:not(:last-child) {
     margin-right: 0rem; }
-  .show-flex > div:first-child .hit button:not(:last-child) {
-    margin-bottom: 2rem; }
   #team .container p {
     width: 100%; } }
 

@@ -86,9 +86,9 @@
         justify-content: center;
         align-items: center;
       }
-      div > button:not(:last-child){
-        margin-right: 0;
-      }
+      // div > button:not(:last-child){
+      //   margin-right: 0;
+      // }
     }
   }
 
@@ -106,8 +106,7 @@
           width: 75%
         }
       }   
-    } 
-
+    }
 
     // about media query
     #about-area .nav{
@@ -180,6 +179,30 @@
         p{
           width: 100%;
         }
+    }
+  }
+
+  #enterprise{
+    & .container{
+      & > div{
+        input{
+          width: 100%;
+          margin-right: 0;
+          margin-top: 2rem;
+        }
+        button{
+          width: 100%;
+          margin-right: 0;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+  #footer{
+    & .container{
+      & > div:first-child{
+        grid-template-columns: 100%;
+      }
     }
   }
 
@@ -266,11 +289,11 @@
         div > button:not(:last-child){
           margin-right: 0rem;
         }
-        .hit{
-          & button:not(:last-child){
-            margin-bottom: 2rem;
-          }
-        }
+        // .hit{
+        //   & button:not(:last-child){
+        //     margin-bottom: 2rem;
+        //   }
+        // }
       }
     } 
 
